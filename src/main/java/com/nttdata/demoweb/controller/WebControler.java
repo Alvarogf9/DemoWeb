@@ -21,6 +21,15 @@ public class WebControler {
 		empleadoService.registrar(name);
 		return "hola";
 	}
+	
+	@GetMapping("/listarEmpleados")
+	public String listarEmp(Model model) {
+		model.addAttribute("listaEmp", empleadoService.listar());
+		model.addAttribute("listaEmpConE", empleadoService.listarFiltroNombre("e"));
+		model.addAttribute("listaJPA", empleadoService.listarConJPA(2, "%o%"));
+		model.addAttribute("listaNombreExacto", empleadoService.listarFiltroNombreEs("Rocío"));
+		return "listarEmpleados";
+	}
 
 	@GetMapping("/error")
 	public String errorPage()
