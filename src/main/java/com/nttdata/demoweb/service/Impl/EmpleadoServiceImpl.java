@@ -44,6 +44,12 @@ public class EmpleadoServiceImpl implements EmpleadoService{
 	public List<Empleado> listarFiltroNombreEs(String cad) {
 		return repoJPA.listarCuyoNombreEs(cad);
 	}
+
+	@Override
+	public Empleado inserta(Empleado emp) {
+		return repoJPA.save(emp);
+		
+	}
 	
 	
 
