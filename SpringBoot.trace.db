@@ -1,8 +1,0 @@
-2022-03-14 09:26:27 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ROL USUARIO USERNAME[*]"
-Syntax error in SQL statement "SELECT * FROM ROL USUARIO USERNAME[*]"; SQL statement:
-SELECT * FROM ROL USUARIO USERNAME [42000-200]
-2022-03-14 09:26:44 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ROL USUARIO USERNAME[*] ROL"
-Syntax error in SQL statement "SELECT * FROM ROL USUARIO USERNAME[*] ROL"; SQL statement:
-SELECT * FROM ROL USUARIO USERNAME ROL [42000-200]
